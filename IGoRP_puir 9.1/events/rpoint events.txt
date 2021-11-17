@@ -1,0 +1,119 @@
+#Initial rpoint event, 2 years
+country_event = {
+	id = 800000
+	title = "EVTNAME800000"
+	desc = "EVTDESC800000"
+
+	picture = "meiji_court"
+
+	is_triggered_only = yes
+
+	option = {
+		years_of_research = 1
+		add_country_modifier = {
+			name = years_of_research2
+			duration = 548
+		}
+		set_country_flag = years_of_research21
+	}
+}
+
+country_event = {
+	id = 800001
+	title = "EVTNAME800001"
+	desc = "EVTDESC800001"
+
+	picture = "meiji_court"
+
+	trigger = {
+	    has_country_flag = years_of_research21
+		NOT = {
+			has_country_modifier = years_of_research2
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		years_of_research = 1
+		clr_country_flag = years_of_research21
+	}
+}
+
+#Initial rpoint event, 3 years
+country_event = {
+	id = 800002
+	title = "EVTNAME800002"
+	desc = "EVTDESC800002"
+
+	picture = "meiji_court"
+
+	is_triggered_only = yes
+
+	option = {
+		years_of_research = 1
+		add_country_modifier = {
+			name = years_of_research3
+			duration = 548
+		}
+		set_country_flag = years_of_research31
+	}
+}
+
+country_event = {
+	id = 800003
+	title = "EVTNAME800003"
+	desc = "EVTDESC800003"
+
+	picture = "meiji_court"
+
+	trigger = {
+	    has_country_flag = years_of_research31
+		NOT = {
+			has_country_modifier = years_of_research3
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		years_of_research = 1
+		add_country_modifier = {
+			name = years_of_research3
+			duration = 548
+		}
+		clr_country_flag = years_of_research31
+		set_country_flag = years_of_research32
+	}
+}
+
+country_event = {
+	id = 800004
+	title = "EVTNAME800004"
+	desc = "EVTDESC800004"
+
+	picture = "meiji_court"
+
+	trigger = {
+	    has_country_flag = years_of_research32
+		NOT = {
+			has_country_modifier = years_of_research3
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		years_of_research = 1
+		clr_country_flag = years_of_research32
+	}
+}

@@ -1,0 +1,55 @@
+Changelog - IGoRP Version 9.1
+
+**Prussia and NGF Formation Rework**
+
+-Prussia now looses Small Nation modifer when passing 4.5m pops, compared to 3.75m for every other nation. This is so Prussia can keep +2% mob size and other modifers for longer, as 1836 Prussia pop is 3.64m.
+
+-Diplomacy national value now reduces MTTH to annex north german spherelings by 10% for Prussia.
+
+-Added decision for Prussia to annex a random north german sphereling that has been sphered for atleast 10 years, costs 5 infamy and has a 1 year cooldown.
+
+-North german sphereling annexation event MTTH has been seperated into major north german spherelings (>125k pops), and minor north german spherelings. Minor spherelings have shorter MTTH to be annexed. A Prussia succsessful in sphering Hannover, Holstein and Saxony, and retaining spheres over the North Germans can expect to annex most of them around 1850, and form NGF by 1855.
+
+
+**General and Disparate Changes**
+
+-AI will now prioritise researching basic chemistry and medicine first.
+
+-AI will now pick the option that conserves the most pop for disease and colonial uprising events.
+
+-Newfoundland cores have been removed.
+
+-Decisions that gave Japan more then a year of rpoints have been reworked to dispense these rpoints over time with events, such that Japan can make use of the excess rpoints.
+
+-(TEMPORARY) Restored culture distrubution in Persia. (Imported from SteelRyan)
+
+-Added easteregg pops.
+
+
+**Bugfixes and Localisation**
+
+-Bolivia now has a defined starting political party, which previously caused crashes.
+
+-Fixed region localisation for algeria, croatia and siebenburgen.
+
+-Fixed rivercorssings: one in Russia and two at the Argentina-Brazil border (Credit to SteelRyan)
+
+-Johore and Brunei no longer accept noculture.
+
+
+-------------------------------------------------------------------------
+
+
+Changelog - IGoRP Version 9.0 (From IGoR 8.0.6)
+
+**Persia rework**
+
+-Afghanistan and baluchistan cultures are functually reverted back. Persia will no longer accept pops in afghanistan.
+
+-Persian decisions for turkic accepted and cores on afghanistan and baluchistan is removed.
+
+-Persian core on iraq decision now require owning iraq.
+
+**Geographic changes**
+
+-Consolidated regions in north africa, south egypt, sudan and siebenburgen. Merged slovenia with croatia and split croatia into a coastal and inland region.
