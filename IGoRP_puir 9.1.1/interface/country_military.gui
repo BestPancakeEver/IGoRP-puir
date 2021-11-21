@@ -100,6 +100,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			clicksound = click
 			position = { x= 345 y = 564 }
+			shortcut = "m"
 		}
 		guiButtonType = {
 			name = "demobilize"
@@ -238,6 +239,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_sortbutton_34"
 				buttonText = "MILITARY_SORT_TYPE"
 				buttonFont = "vic_18_black"
+				shortcut = "s"
 			}
 			guiButtonType = {
 				name = "sort_leader_name"
@@ -263,6 +265,7 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				clicksound = click
 				position = { x= 11 y = 327 }
+				shortcut = "g"
 			}	
 			
 			guiButtonType = {
@@ -273,6 +276,7 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				clicksound = click
 				position = { x= 155 y = 327 }
+				shortcut = "a"
 			}
 			
 			checkboxType = {
@@ -280,6 +284,7 @@ guiTypes = {
 				quadTextureSprite = "GFX_checkbox_default"
 				Orientation = "UPPER_LEFT"
 				position = { x= 80 y = 366 }
+				shortcut = "r"
 			}
 			instantTextBoxType = { 
 				name = "auto_create_text"
@@ -296,6 +301,7 @@ guiTypes = {
 				quadTextureSprite = "GFX_checkbox_default"
 				Orientation = "UPPER_LEFT"
 				position = { x= 80 y = 386 }
+				shortcut = "f"
 			}
 			instantTextBoxType = { 
 				name = "auto_assign_text"

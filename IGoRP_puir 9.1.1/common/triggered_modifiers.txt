@@ -306,6 +306,16 @@ ai_boost = {
 	icon = 9
 }
 
+#AI Immigration debuff
+ai_immigration = {
+	trigger = { 
+		ai = yes
+		has_country_flag = new_world_nation
+	}
+	global_immigrant_attract = -0.01 #-1% immigration
+	icon = 18
+}
+
 gorkha_kingdom = {
 	trigger = {
 		is_culture_group = central_asian

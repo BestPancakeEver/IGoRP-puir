@@ -40,6 +40,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_unit_leader_button"
 			position = { x= 51 y = 28 }
 			Orientation = "UPPER_LEFT"
+			shortcut = "a"
 		}
 		
 		instantTextBoxType = {
@@ -463,6 +464,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_button_standard_144"	
 			buttonText = "CLOSE"
 			buttonFont = "vic_18_black"
+			shortcut = "ESCAPE"
 		}
 
 		guiButtonType = {
@@ -477,6 +479,7 @@ guiTypes = {
 			name = "auto_assign"
 			position = { x= 217 y = 383 }
 			quadTextureSprite ="GFX_checkbox_default"
+			shortcut = "f"
 		}
 
 		instantTextBoxType = {
@@ -728,6 +731,7 @@ guiTypes = {
 			buttonText = "REORG_PANEL_BALANCE_UNITS"
 			buttonFont = "vic_18_black"
 			Orientation = "CENTER"
+			shortcut = "b"
 		}
 		
 		guiButtonType = {
@@ -741,6 +745,7 @@ guiTypes = {
 			buttonFont = "vic_18_black"
 			Orientation = "CENTER"
 			clicksound = close_window
+			shortcut = "ESCAPE"
 		}
 			
 		listboxType = {
@@ -1192,6 +1197,7 @@ guiTypes = {
 				delayedTooltipText = ""
 				buttonText = "CLOSE"
 				buttonFont = "Arial12_bold_black"
+				shortcut = "ESCAPE"
 			}
 
 

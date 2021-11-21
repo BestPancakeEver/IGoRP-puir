@@ -1,3 +1,25 @@
+Changelog - IGoRP Version 9.1.1
+
+**General and Disparate Changes**
+
+-Peru cores on Ecuador has been removed.
+
+-Added slight immigrant attraction debuff for AI's, such that they dont dominate primary immigration slots as much in the early game.
+
+-AI will no longer switch National Values.
+
+-Yaviza in Panama is now a jungle (Darien gap). Note that the province is still visually farmlands.
+
+-Incorperated Zombies_MP_binds_1.2, keybind list is included in mod. Credit to Zombie_Freak115.
+
+**Bugfixes and Localisation**
+
+-Romania should no longer be able to form with only one of the romanians independent through a PUIR international support decisionchain.
+
+-Noculture in Montevideo and Ascuncion has been fixed.
+
+-------------------------------------------------------------------------
+
 Changelog - IGoRP Version 9.1
 
 **Prussia and NGF Formation Rework**

@@ -143,6 +143,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_province_recruit_button_wide"
 			buttonText = "text"
 			buttonFont = "vic_18_black"
+			shortcut = "b"
 		}
 		
 		guiButtonType = {
@@ -151,6 +152,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_province_recruit_group_button_wide"
 			buttonText = "text"
 			buttonFont = "vic_18_black"
+			shortcut = "v"
 		}
 		
 		iconType = {
@@ -359,6 +361,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_button_standard_177"
 			buttonText = "CLOSE"
 			buttonFont = "vic_18_black"
+			shortcut = "ESCAPE"
 		}
 		
 		guiButtonType = {
@@ -549,6 +552,7 @@ guiTypes = {
 			name = "cancel_all_units"
 			position = { x=625 y = 3 }
 			quadTextureSprite ="GFX_cancel_all_units"
+			shortcut = "z"
 		}
 		
 		### (new) FOLDER BUTTONS.
@@ -797,6 +801,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_button_standard_200"
 			buttonText = "CLOSE"
 			buttonFont = "vic_18_black"
+			shortcut = "ESCAPE"
 		}	
 	}
 }
