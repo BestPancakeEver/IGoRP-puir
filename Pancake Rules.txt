@@ -1,0 +1,135 @@
+Rules:
+
+-------------------------------
+Table of Contents
+
+0. Preface and Intent
+1. Alliances
+2. War Declarations and CBs
+3. Interventions and Ongoing Wars
+4. Rules of Engagement
+5. Peace Offers and Separate Peace
+6. Stalemate Rules (Important enough for their own section)
+7. Economic Rules (China Rules)
+8. Releasing Nations and Nation Ruining
+9. Host Nation Rules
+10. Ragequit Clause
+-------------------------------
+
+0. Preface: 
+	A. The precise wording of each rule is of secondary concern to the opinion of the Host in interpretting the rule. They have the final say, always.
+	B. Be able to maintain at least 2 speed. If you cannot go above 1 speed, you will be automatically kicked with no compensation.
+	
+-------------------------------
+
+1. Alliances:
+	A. Joining a conflict REQUIRES that you have the intent to participate in that conflict. Joining a war for a free peace treaty will not be allowed.
+	B. Vision alliances are allowed.
+
+-------------------------------
+
+2. War Declaration and CBs
+	A. All Player wars, except transfer wars, MUST be announced with a pause and a statement of Wargoals. ( These initial wargoals MUST be TAKEN in the peace of that war. )
+	B. You are NOT, absolutely NOT, allowed to declare war on a player already in a player war. You must also give a reasonable amount ( Host decision ) of time based on how devastated a loser was to declare a chain (war immediately after another) war.
+	C. Nations who are currently in a player war may declare war at anytime on players NOT in a player war.
+	D. Attacking AI or player nations that a player has sphered counts as attacking that player (reference war declaration rules and declaration rule K. specifically.)
+	E. AI spherelings are protected while their sphere leader is in a player war.
+	F. For the first year of the war, only declared wargoals may be added by the attacker. Defenders are limited to 20% above what the attackers declared for up to 101% war score. After one year, wars "escalate" and you may add what you want up to 101% warscore if it is not already.
+	G. In the event that a player war becomes a great war, none of this shit matters and you can immediately add up to 101% warscore in tickers whenever you want.
+	H. Intentionally starting wars with the intent to fish peace treaties is not allowed.
+	I. Adding multiple CBs on the same target or general target to double dip tickers is NOT allowed. ( Example: Release two sicilies + take state sicily + etc )
+	J. If you have surrendered a war, are planning to surrender a war, or a peace is being settled for a war you are in; you may not within that window declare on any of the war participants spherelings or allies in an attempt to block them from joining the sphere war as you are technically still at war with the sphere leader.
+	K. (Forced Expansion Rules) 
+		1. If you are in a player war or are declaring a player war, you may build or have a cb prepared, and declare intent to attack 		one of the enemy players' spherelings or allies that are not in the ongoing (or any) player war. (CB must be ready to go)
+		2. Should the target not join the ongoing war, it will become a different, second war up to 100%.
+		3. If this forced expansion is used on a player who has declared intent to join the ongoing war, they must join immediately. This cannot be used if the target declared intent to join a different player war.
+		4. CBs used to force the target to join the ongoing war must be included in the final peace.
+	
+-------------------------------
+
+3. Intervention and Ongoing Wars:
+	A. If a player wishes to join an ongoing player war, they must give a 3 month notice in chat and state which side they intend to join. This is referred to as intent to join. You may not keep refreshing intent because of cold feet or any other reason. Declaring intent integrates them into the ongoing war and will be interpreted as already being in a player war.
+	B. A nation that has declared intent to join any player war is now "locked" into that conflict and considered apart of that player war already. Read, rule B in War declaration and CBs rules.
+	C. Players have 1 week (7 days) to respond to a call to arms before they must declare/redeclare intent to join that war.
+	D. Interventions (friendly influence intervention specifically) into an ongoing player - ai war requires a 3 month announcement and must be accompanied by a pause. The interveneing side is assumed to have status quo + 20% as their wargoal until a year has passed since intervention.
+	E. No player may join a war with the intention of surrendering immediately or hijacking the war ( becoming war leader ) and surrendering the war or white peacing specific nations from the war to undermine CBs that were added on them.
+	
+-------------------------------
+
+4. Rules of Engagement
+	A. Combat units are NOT allowed to retreat more than one province from battles. Rule breaking units must be deleted.
+	B. Combat units are NOT allowed to retreat through enemy units. Rule breaking units must be deleted.
+	C. Combat units are NOT allowed to retreat through enemy frontlines. Rule breaking units must be deleted.
+	D. Combat units are NOT allowed to move from neutral territory into enemy territory or vice versa during player wars. ( The general rule of thumb for this is you can go neutral to friendly, friendly to neutral, neutral to neutral. You can NEVER go neutral to enemy or enemy to neutral. Occupied territories you own are considered friendly. If you are locked into combat on an occupied territory you cannot retreat into neutral from this battle.
+	E. Troops leftover in enemy territories or neutral territories must always return to allied lands as soon as possible unless they have military access. ( They are marked as exiled if they do not. ) 
+	F. You are NOT allowed to delete units about to be attacked or are on the frontlines ( less than 3 provinces away from enemy units ) to avoid getting those stacks wiped and/or losing battle warscore.
+	G. Each nation may only mobilize a single time per war. If a nation has started mobilization before the war began, that mobilization is still the single one they get for that war.
+	H. Infamy is CAPPED at 25. Going over 25 will result in a save edit prestige punch of twice as much infamy as you had when you went over infamy.
+	I. The use of liberate nation CBs to liberate nation-breaking nations before 1890 is not allowed.
+	
+-------------------------------
+
+5. Peace Offers and Separate Peace
+	A. Do NOT spam peace offers with the intent to grief.
+	B. Do NOT hold onto a past peace offer. ( aka holding the peace in the corner )
+	C. Do NOT stab hit peace offers.
+	D. No peace offer can exceed 101% warscore.
+	E. The cbs initiating a player war must be apart of the peace.
+	F. All war goals added during a war MUST be apart of the peace. Ticker only CBs are not allowed. (Meme CBs added unilaterally without a sides consent do NOT need to be taken.)
+	G. Surrenders must be stated in chat with a pause and CANNOT be retracted. Ask for terms BEFORE you decide to surrender.
+	H. A war leader may NOT surrender the entire war unless all great powers on their side have consented to peace.
+	I. A surrender by a non-war leader great power means the victorious side MUST send a peace offer, apart of the overall 101% maximum, as soon as possible.
+	J. Should a side achieve 100% warscore from battles/occupations/blockades/etc then their wargoals up to their maximum 101% must be accepted by the losing side so long as they follow the earlier rules.
+	K. Nations that have been peaced out seperately from a war may NOT rejoin the same war on either side at a later date, UNLESS it is a great war.
+	L. Nations that wish to separate peace but are an important avenue for invasion or other reasons will become a DMZ once they are peaced from the war. A DMZ requires the surrendering nation move all their troops out of the way of all other players armies and give military access to all members in both sides of the war they just left. The surrendering powers land is not considered neutral and battles / blockades are allowed to occur in this land. (The entire point of this rule is so people are not indefinitely occupied or sat on)
+	M. If an attacker surrenders the war, then you may add up to 30% higher warscore on them. Declaring a war with a low cost CB to preemptively block a larger CB aimed at you (must be building or built) is against the rules.
+	
+-------------------------------
+
+6. Stalemate Rules (Important enough for their own section)
+	A. Stalemate will be called if no serious geo-strategic offensives are made after a year during any sort of player conflicts (intervention, great war, normal war, etc).
+	B. Once a stalemate call has been made, both sides have 3 months to start a serious military offensive to reset the timer / discontinue the timer.
+	C. Sacrificing token units to keep a war going will not be allowed.
+	D. Once a stalemate has officially caused a war to end, the winning side will be the side with the most FULLY occupied states will technically win and they may only add those fully occupied states as CBs. In the event that both sides have fully occupied states, they will exchange those states so long as their costs are below 101% warscore.
+	
+-------------------------------
+
+7. Economic Rules (China Rules)
+	A. China is off limits unless there is a Chinese player, with the exception of:
+		a. Manchuria
+		b. Formosa
+		c. Hainan
+		d. Mongolia
+		e. Tibet
+		f. Xinjiang
+		g. and any treaty port
+	B. Cut down to size, humiliate, pay reparations, and dismantle fortifications are the only other CBs permitted.
+	C. You cannot willing go bankrupt, and if I see exploiting / fraud I'll fuck you up.
+	D. No deleting factories in a state you are about to lose to the enemy in a peace offer.
+	E. If there is a Chinese player, you are NOT allowed to sphere them until 1865.
+	F. If there is a Chinese player, they are NOT allowed to eat their substates before 1865.
+
+-------------------------------
+
+8. Releasing Nations and Nation Ruining
+	A. You may only release a nation if it is not nation ruining. It must also be 4 or more provinces ( not states ) in size.
+
+-------------------------------	
+
+9. Host Nation Rules
+	A. You must at ALL TIMES be allied to the host nation, and if that alliance breaks for whatever reason ( war declarations between players usually does this ) you must immediately refresh or accept an alliance from the host nation.
+	B. You cannot build a CB of ANY kind on the host nation or declare on a war of any kind on the host nation. Doing so will get you fucking smacked.
+	
+-------------------------------
+
+10. Ragequit Clause
+	A. If you feel like the GM is intentionally ruling against you for reasons other than fairness, you have the right to ragequit the game without any penalty so long as you make your case as clearly and concisely as possible in a PM to one of the other admins / hosts.
+	
+		
+-------------------------------
+
+Changelog from Reno Rules:
+
+Removed;
+
+2.K.5 "If a player in a player war has a neutral puppet, their enemy may demand that puppet join the ongoing war. Doing so gives the overlord of the puppet 1 month to add them to the war."
