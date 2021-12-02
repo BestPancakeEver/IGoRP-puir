@@ -1,0 +1,2053 @@
+#Economic Reforms
+
+#land_reform 1-giver
+country_event = {
+	id = 820000
+	title = "EVTNAME820000"
+	desc = "EVTDESC820000"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    practical_steam_engine = 1
+		    clean_coal = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       market_structure = 1
+		       high_n_low_pressure_steam_engines = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = land_reform_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820020
+		}
+		set_country_flag = land_reform_1
+	}
+}
+
+#land_reform 2-giver
+country_event = {
+	id = 820001
+	title = "EVTNAME820001"
+	desc = "EVTDESC820001"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    market_structure = 1
+		    high_n_low_pressure_steam_engines = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = land_reform_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820021
+		}
+		set_country_flag = land_reform_2
+	}
+}
+
+#admin_reform 1-giver
+country_event = {
+	id = 820002
+	title = "EVTNAME820002"
+	desc = "EVTDESC820002"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    ad_hoc_money_bill_printing = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       private_bank_money_bill_printing = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = admin_reform_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820022
+		}
+		set_country_flag = admin_reform_1
+	}
+}
+
+#admin_reform 2-giver
+country_event = {
+	id = 820003
+	title = "EVTNAME820003"
+	desc = "EVTDESC820003"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    private_bank_money_bill_printing = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = admin_reform_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820023
+		}
+		set_country_flag = admin_reform_2
+	}
+}
+
+#finance_reform 1-giver
+country_event = {
+	id = 820004
+	title = "EVTNAME820004"
+	desc = "EVTDESC820004"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    stock_exchange = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       business_banks = 1
+			   late_classical_theory = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = finance_reform_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820024
+		}
+		set_country_flag = finance_reform_1
+	}
+}
+
+#finance_reform 2-giver
+country_event = {
+	id = 820005
+	title = "EVTNAME820005"
+	desc = "EVTDESC820005"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    business_banks = 1
+			late_classical_theory = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = finance_reform_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820025
+		}
+		set_country_flag = finance_reform_2
+	}
+}
+
+#education_reform 1-giver
+country_event = {
+	id = 820006
+	title = "EVTNAME820006"
+	desc = "EVTDESC820006"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    positivism = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       functionalism = 1
+			   ideological_thought = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = education_reform_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820026
+		}
+		set_country_flag = education_reform_1
+	}
+}
+
+#education_reform 2-giver
+country_event = {
+	id = 820007
+	title = "EVTNAME820007"
+	desc = "EVTDESC820007"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    functionalism = 1
+			ideological_thought = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = education_reform_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820027
+		}
+		set_country_flag = education_reform_2
+	}
+}
+
+#transport_improv 1-giver
+country_event = {
+	id = 820008
+	title = "EVTNAME820008"
+	desc = "EVTDESC820008"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    early_railroad = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       iron_railroad = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = transport_improv_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820028
+		}
+		set_country_flag = transport_improv_1
+	}
+}
+
+#transport_improv 2-giver
+country_event = {
+	id = 820009
+	title = "EVTNAME820009"
+	desc = "EVTDESC820009"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    iron_railroad = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = transport_improv_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820029
+		}
+		set_country_flag = transport_improv_2
+	}
+}
+
+#pre_indust 1-giver
+country_event = {
+	id = 820010
+	title = "EVTNAME820010"
+	desc = "EVTDESC820010"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    organized_factories = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       scientific_management = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = pre_indust_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820030
+		}
+		set_country_flag = pre_indust_1
+	}
+}
+
+#pre_indust 2-giver
+country_event = {
+	id = 820011
+	title = "EVTNAME820011"
+	desc = "EVTDESC820011"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    scientific_management = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = pre_indust_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820031
+		}
+		set_country_flag = pre_indust_2
+	}
+}
+
+#western_science 1-giver
+country_event = {
+	id = 820012
+	title = "EVTNAME820012"
+	desc = "EVTDESC820012"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    idealism = 1
+			medicine = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       inorganic_chemistry = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = western_science_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820032
+		}
+		set_country_flag = western_science_1
+	}
+}
+
+#western_science 2-giver
+country_event = {
+	id = 820013
+	title = "EVTNAME820013"
+	desc = "EVTDESC820013"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    inorganic_chemistry = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = western_science_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820033
+		}
+		set_country_flag = western_science_2
+	}
+}
+
+#land_reform 1-reciver
+country_event = {
+	id = 820020
+	title = "EVTNAME820020"
+	desc = "EVTDESC820020"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = yes_land_reform
+	    activate_technology = water_wheel_power #because it won't be enabled until after westernizing otherwise
+		activate_technology = mechanized_mining #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#land_reform 2-reciver
+country_event = {
+	id = 820021
+	title = "EVTNAME820021"
+	desc = "EVTDESC820021"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = land_reform_two
+		activate_technology = water_wheel_power #because it won't be enabled until after westernizing otherwise
+		activate_technology = mechanized_mining #because it won't be enabled until after westernizing otherwise
+	    activate_technology = freedom_of_trade #because it won't be enabled until after westernizing otherwise
+		activate_technology = practical_steam_engine #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#admin_reform 1-reciver
+country_event = {
+	id = 820022
+	title = "EVTNAME820022"
+	desc = "EVTDESC820022"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = yes_admin_reform
+	    activate_technology = no_standard #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#admin_reform 2-reciver
+country_event = {
+	id = 820023
+	title = "EVTNAME820023"
+	desc = "EVTDESC820023"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = admin_reform_two
+		activate_technology = no_standard #because it won't be enabled until after westernizing otherwise
+	    activate_technology = ad_hoc_money_bill_printing #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#finance_reform 1-reciver
+country_event = {
+	id = 820024
+	title = "EVTNAME820024"
+	desc = "EVTDESC820024"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = yes_finance_reform
+	    activate_technology = private_banks #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#finance_reform 2-reciver
+country_event = {
+	id = 820025
+	title = "EVTNAME820025"
+	desc = "EVTDESC820025"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = finance_reform_two
+		activate_technology = early_classical_theory_and_critique #because it won't be enabled until after westernizing otherwise
+		activate_technology = private_banks #because it won't be enabled until after westernizing otherwise
+	    activate_technology = stock_exchange #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#education_reform 1-reciver
+country_event = {
+	id = 820026
+	title = "EVTNAME820026"
+	desc = "EVTDESC820026"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = yes_education_reform
+	    activate_technology = malthusian_thought #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#education_reform 2-reciver
+country_event = {
+	id = 820027
+	title = "EVTNAME820027"
+	desc = "EVTDESC820027"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = education_reform_two
+		activate_technology = enlightenment_thought #because it won't be enabled until after westernizing otherwise
+		activate_technology = malthusian_thought #because it won't be enabled until after westernizing otherwise
+	    activate_technology = positivism #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#transport_improv 1-reciver
+country_event = {
+	id = 820028
+	title = "EVTNAME820028"
+	desc = "EVTDESC820028"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = yes_transport_improv
+	    activate_technology = experimental_railroad #because it won't be enabled until after westernizing otherwise
+		build_railway_in_capital = {
+						in_whole_capital_state = yes # no = just in main capital province.
+						limit_to_world_greatest_level = yes
+						}
+	}
+}
+
+#transport_improv 2-reciver
+country_event = {
+	id = 820029
+	title = "EVTNAME820029"
+	desc = "EVTDESC820029"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = transport_improv_two
+		activate_technology = experimental_railroad #because it won't be enabled until after westernizing otherwise
+		build_railway_in_capital = {
+						in_whole_capital_state = yes # no = just in main capital province.
+						limit_to_world_greatest_level = yes
+						}
+	    activate_technology = early_railroad #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#pre_indust 1-reciver
+country_event = {
+	id = 820030
+	title = "EVTNAME820030"
+	desc = "EVTDESC820030"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = yes_pre_indust
+	    activate_technology = guild_based_production #because it won't be enabled until after westernizing otherwise
+		build_factory_in_capital_state = canned_food_factory
+	}
+}
+
+#pre_indust 2-reciver
+country_event = {
+	id = 820031
+	title = "EVTNAME820031"
+	desc = "EVTDESC820031"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = yes_industrial_construction
+		activate_technology = guild_based_production #because it won't be enabled until after westernizing otherwise
+		build_factory_in_capital_state = canned_food_factory
+	    activate_technology = organized_factories #because it won't be enabled until after westernizing otherwise
+		build_factory_in_capital_state = cement_factory
+	}
+}
+
+#western_science 1-reciver
+country_event = {
+	id = 820032
+	title = "EVTNAME820032"
+	desc = "EVTDESC820032"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = yes_western_science
+	    activate_technology = late_enlightenment_philosophy #because it won't be enabled until after westernizing otherwise
+		activate_technology = basic_chemistry #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#western_science 2-reciver
+country_event = {
+	id = 820033
+	title = "EVTNAME820033"
+	desc = "EVTDESC820033"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    economic_reform = western_science_two
+		activate_technology = late_enlightenment_philosophy #because it won't be enabled until after westernizing otherwise
+		activate_technology = basic_chemistry #because it won't be enabled until after westernizing otherwise
+	    activate_technology = medicine #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#Military Reforms
+
+#foreign_training 1-giver
+country_event = {
+	id = 820040
+	title = "EVTNAME820040"
+	desc = "EVTDESC820040"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    strategic_mobility = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       point_defense_system = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = foreign_training_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820060
+		}
+		set_country_flag = foreign_training_1
+	}
+}
+
+#foreign_training 2-giver
+country_event = {
+	id = 820041
+	title = "EVTNAME820041"
+	desc = "EVTDESC820041"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    point_defense_system = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = foreign_training_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820061
+		}
+		set_country_flag = foreign_training_2
+	}
+}
+
+#foreign_weapons 1-giver
+country_event = {
+	id = 820042
+	title = "EVTNAME820042"
+	desc = "EVTDESC820042"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    muzzle_loaded_rifles = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       breech_loaded_rifles = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = foreign_weapons_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820062
+		}
+		set_country_flag = foreign_weapons_1
+	}
+}
+
+#foreign_weapons 2-giver
+country_event = {
+	id = 820043
+	title = "EVTNAME820043"
+	desc = "EVTDESC820043"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    breech_loaded_rifles = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = foreign_weapons_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820063
+		}
+		set_country_flag = foreign_weapons_2
+	}
+}
+
+#military_constructions 1-giver
+country_event = {
+	id = 820044
+	title = "EVTNAME820044"
+	desc = "EVTDESC820044"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    iron_muzzle_loaded_artillery = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       iron_breech_loaded_artillery = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = military_constructions_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820064
+		}
+		set_country_flag = military_constructions_1
+	}
+}
+
+#military_constructions 2-giver
+country_event = {
+	id = 820045
+	title = "EVTNAME820045"
+	desc = "EVTDESC820045"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    iron_breech_loaded_artillery = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = military_constructions_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820065
+		}
+		set_country_flag = military_constructions_2
+	}
+}
+
+#foreign_officers 1-giver
+country_event = {
+	id = 820046
+	title = "EVTNAME820046"
+	desc = "EVTDESC820046"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    army_professionalism = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       army_decision_making = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = foreign_officers_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820066
+		}
+		set_country_flag = foreign_officers_1
+	}
+}
+
+#foreign_officers 2-giver
+country_event = {
+	id = 820047
+	title = "EVTNAME820047"
+	desc = "EVTDESC820047"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    army_decision_making = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = foreign_officers_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820067
+		}
+		set_country_flag = foreign_officers_2
+	}
+}
+
+#army_schools 1-giver
+country_event = {
+	id = 820048
+	title = "EVTNAME820048"
+	desc = "EVTDESC820048"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    military_plans = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       military_statistics = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = army_schools_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820068
+		}
+		set_country_flag = army_schools_1
+	}
+}
+
+#army_schools 2-giver
+country_event = {
+	id = 820049
+	title = "EVTNAME820049"
+	desc = "EVTDESC820049"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    military_statistics = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = army_schools_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820069
+		}
+		set_country_flag = army_schools_2
+	}
+}
+
+#foreign_navies 1-giver
+country_event = {
+	id = 820050
+	title = "EVTNAME820050"
+	desc = "EVTDESC820050"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    steamers = 1
+			fire_control_systems = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       iron_steamers = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = foreign_navies_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820070
+		}
+		set_country_flag = foreign_navies_1
+	}
+}
+
+#foreign_navies 2-giver
+country_event = {
+	id = 820051
+	title = "EVTNAME820051"
+	desc = "EVTDESC820051"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    iron_steamers = 1
+			fire_control_systems = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = foreign_navies_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820071
+		}
+		set_country_flag = foreign_navies_2
+	}
+}
+
+#naval_schools 2-giver
+country_event = {
+	id = 820052
+	title = "EVTNAME820052"
+	desc = "EVTDESC820052"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    naval_decision_making = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = naval_schools_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820072
+		}
+		set_country_flag = naval_schools_2
+	}
+}
+
+#foreign_naval_officers 1-giver
+country_event = {
+	id = 820053
+	title = "EVTNAME820053"
+	desc = "EVTDESC820053"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    battleship_column_doctrine = 1
+			naval_plans = 1
+		}
+		#Failsafe against reform reversion
+		NOT = {
+		    AND = {
+		       raider_group_doctrine = 1
+		    }
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = foreign_naval_officers_1 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820073
+		}
+		set_country_flag = foreign_naval_officers_1
+	}
+}
+
+#foreign_naval_officers 2-giver
+country_event = {
+	id = 820054
+	title = "EVTNAME820054"
+	desc = "EVTDESC820054"
+
+	picture = "Rebellion"
+
+	trigger = { 
+		OR = {
+			has_country_flag = released_colonial_MLY
+			has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		AND = {
+		    raider_group_doctrine = 1
+		}
+		OR = {
+		   MLY = { in_sphere = THIS }
+		   THI = { in_sphere = THIS }
+		   ICU = { in_sphere = THIS }
+		}
+		NOT = { has_country_flag = foreign_naval_officers_2 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+	    name = "Lets share our technology."
+	    random_country = {
+			limit = {
+				AND = {
+				    OR = {
+				       tag = MLY
+					   tag = THI
+					   tag = ICU
+				    }
+					in_sphere = THIS
+				}
+				
+			}
+			country_event = 820074
+		}
+		set_country_flag = foreign_naval_officers_2
+	}
+}
+
+#foreign_training 1-reciver
+country_event = {
+	id = 820060
+	title = "EVTNAME820060"
+	desc = "EVTDESC820060"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = yes_foreign_training
+	    activate_technology = post_napoleonic_thought #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#foreign_training 2-reciver
+country_event = {
+	id = 820061
+	title = "EVTNAME820061"
+	desc = "EVTDESC820061"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = foreign_training_two
+		activate_technology = post_napoleonic_thought #because it won't be enabled until after westernizing otherwise
+	    activate_technology = strategic_mobility #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#foreign_weapons 1-reciver
+country_event = {
+	id = 820062
+	title = "EVTNAME820062"
+	desc = "EVTDESC820062"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = yes_foreign_weapons
+	    activate_technology = flintlock_rifles #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#foreign_weapons 2-reciver
+country_event = {
+	id = 820063
+	title = "EVTNAME820063"
+	desc = "EVTDESC820063"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = foreign_weapons_two
+		activate_technology = flintlock_rifles #because it won't be enabled until after westernizing otherwise
+	    activate_technology = muzzle_loaded_rifles #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#military_constructions 1-reciver
+country_event = {
+	id = 820064
+	title = "EVTNAME820064"
+	desc = "EVTDESC820064"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = yes_military_constructions
+	    activate_technology = bronze_muzzle_loaded_artillery #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#military_constructions 2-reciver
+country_event = {
+	id = 820065
+	title = "EVTNAME820065"
+	desc = "EVTDESC820065"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = military_constructions_two
+		activate_technology = bronze_muzzle_loaded_artillery #because it won't be enabled until after westernizing otherwise
+	    activate_technology = iron_muzzle_loaded_artillery #because it won't be enabled until after westernizing otherwise
+		build_fort_in_capital = {
+						in_whole_capital_state = no # no = just in main capital province.
+						limit_to_world_greatest_level = no
+					}
+	}
+}
+
+#foreign_officers 1-reciver
+country_event = {
+	id = 820066
+	title = "EVTNAME820066"
+	desc = "EVTDESC820066"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = yes_foreign_officers
+	    activate_technology = army_command_principle #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#foreign_officers 2-reciver
+country_event = {
+	id = 820067
+	title = "EVTNAME820067"
+	desc = "EVTDESC820067"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = foreign_officers_two
+		activate_technology = army_command_principle #because it won't be enabled until after westernizing otherwise
+	    activate_technology = army_professionalism #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#army_schools 1-reciver
+country_event = {
+	id = 820068
+	title = "EVTNAME820068"
+	desc = "EVTDESC820068"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = yes_army_schools
+	    activate_technology = military_staff_system #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#army_schools 2-reciver
+country_event = {
+	id = 820069
+	title = "EVTNAME820069"
+	desc = "EVTDESC820069"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = army_schools_two
+		activate_technology = military_staff_system #because it won't be enabled until after westernizing otherwise
+	    activate_technology = military_plans #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#foreign_navies 1-reciver
+country_event = {
+	id = 820070
+	title = "EVTNAME820070"
+	desc = "EVTDESC820070"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = yes_foreign_navies
+	    activate_technology = naval_design_bureaus #because it won't be enabled until after westernizing otherwise
+		activate_technology = clipper_design #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#foreign_navies 2-reciver
+country_event = {
+	id = 820071
+	title = "EVTNAME820071"
+	desc = "EVTDESC820071"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = foreign_navies_two
+		activate_technology = naval_design_bureaus #because it won't be enabled until after westernizing otherwise
+		activate_technology = clipper_design #because it won't be enabled until after westernizing otherwise
+	    activate_technology = steamers #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#naval_schools 2-reciver
+country_event = {
+	id = 820072
+	title = "EVTNAME820072"
+	desc = "EVTDESC820072"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = naval_schools_two
+	    activate_technology = the_command_principle #because it won't be enabled until after westernizing otherwise
+		activate_technology = naval_professionalism #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#foreign_naval_officers 1-reciver
+country_event = {
+	id = 820073
+	title = "EVTNAME820073"
+	desc = "EVTDESC820073"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = yes_foreign_naval_officers
+	    activate_technology = post_nelsonian_thought #because it won't be enabled until after westernizing otherwise
+		activate_technology = alphabetic_flag_signaling #because it won't be enabled until after westernizing otherwise
+	}
+}
+
+#foreign_naval_officers 2-reciver
+country_event = {
+	id = 820074
+	title = "EVTNAME820074"
+	desc = "EVTDESC820074"
+	
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Will we repay this favor?"
+	    military_reform = foreign_naval_officers_two
+		activate_technology = post_nelsonian_thought #because it won't be enabled until after westernizing otherwise
+		activate_technology = alphabetic_flag_signaling #because it won't be enabled until after westernizing otherwise
+	    activate_technology = battleship_column_doctrine #because it won't be enabled until after westernizing otherwise
+	}
+}

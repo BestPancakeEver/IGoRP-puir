@@ -1,0 +1,64 @@
+#TRA is Territory Exchange tag
+
+#Statify for Malaya
+country_event = {
+	id = 809990
+	title = "EVTNAME809990"
+	desc = "EVTDESC809990"
+
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+	    TRA = { 
+		    civilized = no
+			all_core = { remove_core = TRA }
+		}
+	    MLY = {
+		    inherit = TRA
+		}
+	}
+}
+
+#Statify for Thailand
+country_event = {
+	id = 809991
+	title = "EVTNAME809991"
+	desc = "EVTDESC809991"
+
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+	    TRA = { 
+		    civilized = no
+			all_core = { remove_core = TRA }
+		}
+	    THI = {
+		    inherit = TRA
+		}
+	}
+}
+
+#Statify for Thailand
+country_event = {
+	id = 809992
+	title = "EVTNAME809992"
+	desc = "EVTDESC809992"
+
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+	    TRA = { 
+		    civilized = no
+			all_core = { remove_core = TRA }
+		}
+	    ICU = {
+		    inherit = TRA
+		}
+	}
+}

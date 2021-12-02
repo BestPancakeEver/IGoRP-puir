@@ -1,0 +1,395 @@
+#Influence - Sphere
+country_event = {
+	id = 809999
+	title = "EVTNAME809999"
+	desc = "EVTDESC809999"
+
+	picture = "meiji_court"
+
+	is_triggered_only = yes
+	
+	option = {
+	    name = "Naturally"
+		diplomatic_influence = {
+				who = FROM
+				value = 400
+		}
+    }
+}
+
+#Malaya ai reannex
+country_event = {
+	id = 810000
+	title = "EVTNAME810000"
+	desc = "EVTDESC810000"
+
+	picture = "meiji_court"
+
+	trigger = {
+	    tag = MLY
+		ai = yes
+		NOT = { has_country_flag = MLY_noai }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Okay, then."
+		random_country = {
+			limit = {
+				has_country_flag = released_colonial_MLY
+			}
+			country_event = 810001
+		}
+    }
+}
+
+#Malaya reannex event
+country_event = {
+	id = 810001
+	title = "EVTNAME810001"
+	desc = "EVTDESC810001"
+
+	picture = "meiji_court"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Should have rehosted..."
+		inherit = FROM
+		MLY = { civilized = no }
+		remove_country_flag = released_colonial_MLY
+	}
+}
+
+#Malaya noai setup
+country_event = {
+	id = 810002
+	title = "EVTNAME810002"
+	desc = "EVTDESC810002"
+
+	picture = "meiji_court"
+
+	trigger = {
+	    tag = MLY
+		ai = no
+		NOT = { has_country_flag = MLY_noai }
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "A great achivement indeed!"
+		set_country_flag = MLY_noai
+		any_owned = {
+					add_core = MLY
+				    remove_core = SIA
+				    remove_core = JOH
+				    remove_core = BRU
+				    remove_core = ATJ
+				    remove_core = DJA
+				    remove_core = KLM
+				    remove_core = BAL
+				    remove_core = PHI
+				    remove_core = PHL
+					remove_core = TRA
+		}
+		add_country_modifier = {
+			name = colonial_goverment_support
+			duration = 7300
+		}
+		#Releaser Sphering
+		random_country = {
+			limit = {
+				has_country_flag = released_colonial_MLY
+			}
+			country_event = 809999
+		}
+		
+		
+    }
+}
+
+#Thailand ai reannex
+country_event = {
+	id = 810003
+	title = "EVTNAME810003"
+	desc = "EVTDESC810003"
+
+	picture = "meiji_court"
+
+	trigger = {
+	    tag = THI
+		ai = yes
+		NOT = { has_country_flag = THI_noai }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Okay, then."
+		random_country = {
+			limit = {
+				has_country_flag = released_colonial_THI
+			}
+			country_event = 810004
+		}
+    }
+}
+
+#Thailand reannex event
+country_event = {
+	id = 810004
+	title = "EVTNAME810004"
+	desc = "EVTDESC810004"
+
+	picture = "meiji_court"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Should have rehosted..."
+		inherit = FROM
+		THI = { civilized = no }
+		remove_country_flag = released_colonial_THI
+	}
+}
+
+#Thailand noai setup
+country_event = {
+	id = 810005
+	title = "EVTNAME810005"
+	desc = "EVTDESC810005"
+
+	picture = "meiji_court"
+
+	trigger = {
+	    tag = THI
+		ai = no
+		NOT = { has_country_flag = THI_noai }
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "A great achivement indeed!"
+		set_country_flag = THI_noai
+		any_owned = {
+					add_core = THI
+				    remove_core = SIA
+				    remove_core = LUA
+				    remove_core = CAM
+				    remove_core = JOH
+					remove_core = TRA
+		}
+		add_country_modifier = {
+			name = colonial_goverment_support
+			duration = 7300
+		}
+		#Releaser Sphering
+		random_country = {
+			limit = {
+				has_country_flag = released_colonial_THI
+			}
+			country_event = 809999
+		}
+		
+		
+    }
+}
+
+#Indochina ai reannex
+country_event = {
+	id = 810006
+	title = "EVTNAME810006"
+	desc = "EVTDESC810006"
+
+	picture = "meiji_court"
+
+	trigger = {
+	    tag = ICU
+		ai = yes
+		NOT = { has_country_flag = ICU_noai }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Okay, then."
+		random_country = {
+			limit = {
+				has_country_flag = released_colonial_ICU
+			}
+			country_event = 810007
+		}
+    }
+}
+
+#Indochina reannex event
+country_event = {
+	id = 810007
+	title = "EVTNAME810007"
+	desc = "EVTDESC810007"
+
+	picture = "meiji_court"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Should have rehosted..."
+		inherit = FROM
+		ICU = { civilized = no }
+		remove_country_flag = released_colonial_ICU
+	}
+}
+
+#Indochina noai setup
+country_event = {
+	id = 810008
+	title = "EVTNAME810008"
+	desc = "EVTDESC810008"
+
+	picture = "meiji_court"
+
+	trigger = {
+	    tag = ICU
+		ai = no
+		NOT = { has_country_flag = ICU_noai }
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "A great achivement indeed!"
+		set_country_flag = ICU_noai
+		any_owned = {
+					add_core = ICU
+				    remove_core = SIA
+				    remove_core = LUA
+				    remove_core = CAM
+				    remove_core = DAI
+					remove_core = TRA
+		}
+		add_country_modifier = {
+			name = colonial_goverment_support
+			duration = 7300
+		}
+		#Releaser Sphering
+		random_country = {
+			limit = {
+				has_country_flag = released_colonial_ICU
+			}
+			country_event = 809999
+		}
+		
+		
+    }
+}
+
+#released_colonial_TAG timeout
+country_event = {
+	id = 810009
+	title = "EVTNAME810009"
+	desc = "EVTDESC810009"
+
+	picture = "meiji_court"
+
+	trigger = {
+	    OR = {
+		    has_country_flag = released_colonial_MLY
+		    has_country_flag = released_colonial_THI
+			has_country_flag = released_colonial_ICU
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 20
+		modifier = {
+			factor = 0.05
+			OR = {
+			    has_country_flag = land_reform_1
+				has_country_flag = land_reform_2
+				has_country_flag = admin_reform_1
+				has_country_flag = admin_reform_2
+				has_country_flag = finance_reform_1
+				has_country_flag = finance_reform_2
+				has_country_flag = education_reform_1
+				has_country_flag = education_reform_2
+				has_country_flag = transport_improv_1
+				has_country_flag = transport_improv_2
+				has_country_flag = pre_indust_1
+				has_country_flag = pre_indust_2
+				has_country_flag = western_science_1
+				has_country_flag = western_science_2
+				has_country_flag = foreign_training_1
+				has_country_flag = foreign_training_2
+				has_country_flag = foreign_weapons_1
+				has_country_flag = foreign_weapons_2
+				has_country_flag = military_constructions_1
+				has_country_flag = military_constructions_2
+				has_country_flag = foreign_officers_1
+				has_country_flag = foreign_officers_2
+				has_country_flag = army_schools_1
+				has_country_flag = army_schools_2
+				has_country_flag = foreign_navies_1
+				has_country_flag = foreign_navies_2
+				has_country_flag = naval_schools_2
+				has_country_flag = foreign_naval_officers_1
+				has_country_flag = foreign_naval_officers_2
+			
+			}
+		}
+	}
+	
+	option = {
+	    name = "Dont bother me with this."
+	    remove_country_flag = released_colonial_MLY
+	    remove_country_flag = released_colonial_THI
+		remove_country_flag = released_colonial_ICU
+		remove_country_flag = land_reform_1
+	    remove_country_flag = land_reform_2
+		remove_country_flag = admin_reform_1
+		remove_country_flag = admin_reform_2
+	    remove_country_flag = finance_reform_1
+		remove_country_flag = finance_reform_2
+		remove_country_flag = education_reform_1
+	    remove_country_flag = education_reform_2
+		remove_country_flag = transport_improv_1
+		remove_country_flag = transport_improv_2
+	    remove_country_flag = pre_indust_1
+		remove_country_flag = pre_indust_2
+		remove_country_flag = western_science_1
+		remove_country_flag = western_science_2
+		remove_country_flag = foreign_training_1
+		remove_country_flag = foreign_training_2
+		remove_country_flag = foreign_weapons_1
+		remove_country_flag = foreign_weapons_2
+		remove_country_flag = military_constructions_1
+		remove_country_flag = military_constructions_2
+		remove_country_flag = foreign_officers_1
+		remove_country_flag = foreign_officers_2
+		remove_country_flag = army_schools_1
+		remove_country_flag = army_schools_2
+		remove_country_flag = foreign_navies_1
+		remove_country_flag = foreign_navies_2
+		remove_country_flag = naval_schools_2
+		remove_country_flag = foreign_naval_officers_1
+		remove_country_flag = foreign_naval_officers_2
+    }
+}
