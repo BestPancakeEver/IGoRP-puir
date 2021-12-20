@@ -23,7 +23,7 @@ In Total, Scandinavian Core Ports have gone from 10 Ports, to 9 Ports.
 
 **General and Disparate Changes**
 
--Added Naval Base to Chiba in Kanto.
+-Added Naval Base to Chiba in Tokyo.
 
 -Portugal Clipper oob has been improved.
 

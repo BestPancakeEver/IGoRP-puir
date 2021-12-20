@@ -10,3 +10,4 @@ Credit List so far:
 - Zombie_Freak115 (Keybind Mod)
 - CWE (Assets) 
 - Rennes (Optimisation and Oversight)
+- KevinG (Standardised General Traits)
