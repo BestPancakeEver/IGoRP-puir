@@ -31,8 +31,6 @@ Changelog - IGoRP Version 9.5
    40% Revanchism; global_immigrant_attract = -120% -> -90%
    45% Revanchism; global_immigrant_attract = -135% -> -105%
    50% Revanchism; global_immigrant_attract = -150% -> -120%
-   
--Added Roster option of merging Australia into Canada (Capital will be Ontario) for the Commonwealth Released start. The UK can do this by decision in the first year.
 
 **Italian Formation Rework**
 
@@ -43,15 +41,17 @@ Changelog - IGoRP Version 9.5
 	 
 -Reintroduction of Anti-Italy;
  
-     -Can be formed by the other Italian player immediatly after Italy Formation. Gets the same cores as Italy, but doesnt accept the other Italian culture (North/South Italian).
+     - Can be formed by the other Italian player immediatly after Italy Formation. Gets the same cores as Italy, but doesnt accept the other Italian culture (North/South Italian).
 	 
-	 -Given decision to accept the other Italian culture (North/South Italian), requires owning Milan and Rome (Symmetric to Italy Formation).
+	 - Given decision to accept the other Italian culture (North/South Italian), requires owning Milan and Rome (Symmetric to Italy Formation).
 
 **General and Disparate Changes**
 
 -Decoupled Zombies_MP_binds_1.2, due to popular uproar. Mapmodes whose keybinds were reassigned is in use much more than I anticipated.
 
 -Party Loyality Gain on Election win and Party Loyality Loss on lost war is now both set to zero.
+
+-Added Roster option of merging Australia into Canada (Capital will be Ontario) for the Commonwealth Released start. The UK can do this by decision in the first year.
 
 **Bugfixes and Localisation**
 
@@ -70,14 +70,14 @@ Changelog - IGoRP Version 9.5
 -Set settings to Borderless mode, as it is more gentle to tabbing out of the game. (Credit to Potat) 
    
    Note:
-   A vanilla issue had been resolved to implement this. Vanilla will launch a FALSE Borderless mode (fullScreen=yes, borderless=yes) which reverts to Fullscreen mode (TRUE Fullscreen is fullScreen=yes, borderless=no) while Settings UI will claim Borderless mode is applied. (Note that switching settings from Borderless to Fullscreen will not prompt a "Restart Game to apply Changes" popup) Therefore for your mod to default to Borderless mode, its settings file must be TRUE Borderless (fullScreen=no, borderless=yes).
+   A vanilla issue had been resolved to implement this. Vanilla will launch a FALSE Borderless mode (fullScreen=yes, borderless=yes) which reverts to Fullscreen mode (TRUE Fullscreen is fullScreen=yes, borderless=no) while Settings UI will claim Borderless mode is applied (Note that switching settings from Borderless to Fullscreen will not prompt a "Restart Game to apply Changes" popup). Therefore for your mod to default to Borderless mode, its settings file must be TRUE Borderless (fullScreen=no, borderless=yes).
 
--Added exceptions for Add Core event for Islands apart of Continental regions, as a eligble Continental Province (Next to Core) will trigger the event to add the Core Integration Province Modifer to the **whole** region, including provinces that will never be eligble to be cored (Islands -> No neighbouring Cores). Islands will still not trigger the event to start integration, as they have no neighbouring Cores. This is to resolve Core Integration Province Modifers never expiring on provinces not eligble to become cores (As the modifer gives Global Consciousness), the list of exceptions are currently;
+-Added exceptions for Add Core event for Islands apart of Continental regions, as a eligble Continental Province (Next to Core) will trigger the event to add the Core Integration Province Modifer to the **whole** region, including provinces that will never be eligble to be cored (Islands -> No neighbouring Cores). Islands will still not trigger the event to start integration, as they have no neighbouring Cores. This is to resolve Core Integration Province Modifers never expiring on provinces not eligble to become cores (The modifer gives Global Consciousness), the list of exceptions are currently;
 
 	- Galapagos 
 	- Easter Island
 	- Lesser Antilles Islands NOT connected to South America by strait.
-	- Jan Mayem
+	- Jan Mayen
 	- Gotland
 	- Crete
 	- Canary Islands
