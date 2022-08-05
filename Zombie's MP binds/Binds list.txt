@@ -12,7 +12,9 @@ sort by general type in army tab: s
 de-select national focus: f
 filter all pops in poptab: z
 filter deselect all pops in poptab: x
-Load into transport, select units in transport and load out of transport: v
+load units into transport: v
+select units in transport: v
+take selected troops from transport to land: b
 Enable rebel hunt: w
 Disable rebel hunt: e
 Colonial alert: q
@@ -34,6 +36,7 @@ set naval rally point: x
 subsidize all factories: e
 desub all factories: r
 open all factories: d
+Confirm building a factory: c
 upgrade a factory (can be held down to spamupgrade): v
 select all goods for filter in factory tab: z
 deselect all goods for filter in factory tab: x

@@ -1,0 +1,5 @@
+- Added compatabillity with IGOR 8.0.0+
+
+- Added a new key for automatically confirming to build factories (hold down d when you select a factory in the tab and it will insta build, saves micro)
+
+- Added another escape key for leaving the window where you choose which factory to build, without leaving the entire window

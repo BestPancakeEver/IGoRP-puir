@@ -1,0 +1,1 @@
+Pick whatever installation fits with the mod (and ONLY 1 per mod) and copy the content into the mod dir

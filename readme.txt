@@ -5,9 +5,9 @@ The base of this mod is IGoR_puir 8.0.6 by Nurse_Reno, he can say that he has in
 A MP ruleset that is complementary to the mod is supplied, though not required to use alongside the mod. Note that the ruleset can be very cumbersome for inexperienced GMs!
 
 Credit List so far:
-- Nurse_Reno (Base)
+- Nurse_Reno (Base and Ideas)
 - SteelRyan (Work)
-- Zombie_Freak115 (Keybind Mod)
+- Zombie_Freak115 (Keybind Mod and Work)
 - CWE (Assets) 
 - Rennes (Optimisation and Oversight)
 - KevinG (Standardised General Traits)
